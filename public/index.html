@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meting API</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #FF6B6B, #4ECDC4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p { color: #888; margin-bottom: 2rem; }
+    .endpoints {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: left;
+    }
+    code {
+      background: rgba(255,255,255,0.1);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .endpoint { margin: 0.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎵 Meting API</h1>
+    <p>音乐 API 服务</p>
+    <div class="endpoints">
+      <div class="endpoint"><code>GET /api/search?keyword=关键词&server=netease</code></div>
+      <div class="endpoint"><code>GET /api/song?id=歌曲ID&server=netease</code></div>
+      <div class="endpoint"><code>GET /api/url?id=歌曲ID&server=netease</code></div>
+      <div class="endpoint"><code>GET /api/lyric?id=歌曲ID&server=netease</code></div>
+      <div class="endpoint"><code>GET /api/pic?id=封面ID&server=netease</code></div>
+    </div>
+  </div>
+</body>
+</html>
